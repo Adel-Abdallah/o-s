@@ -1,0 +1,12 @@
+.slick-prev:before,
+.slick-next:before {
+  background-color: white;
+  color: black !important;
+}
+
+
+.slick-prev:after,
+.slick-next:after {
+  background-color: white;
+  color: black !important;
+}

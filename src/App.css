@@ -1,38 +1,124 @@
-.App {
+.Shop{
+width:100%;
+margin-bottom: 60px;
+}
+
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+
+
+.first-image img{
+ width: 350px;
+ height: 450px;
+ position: relative;
+  z-index: 1;
+}
+.second-image img:first-child {
+ width: 350px;
+ height: 200px;
+}
+
+.second-image {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  margin-top: -50px;
+}
+
+.second-image img:nth-child(2){
+  margin-top: -55px;
+  width: 350px;
+  height: 335px;
+  overflow: hidden;
+}
+
+
+.third-image img{
+  width: 350px;
+  height: 450px !important;
+  position: relative;
+  z-index: 1;
+}
+
+.gold {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5B05F;
+  color: white;
+  height: 40px;
+  margin-top: -30px;
+  position: relative;
+  z-index: 2;
+}
+
+.about{
+  max-width: 80%;
+  width:800px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 80px auto;
+}
+
+.about .image img{
+  width: 300px;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about .text{
+  margin: 50px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.circle {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  border: 1px dashed #C5C5C5;
+  border-radius: 50%;
+  z-index: -1;
 }
 
-.App-link {
-  color: #61dafb;
+.circle-text{
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.circle-wrapper p {
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+}
+
+.homepage-layout{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+  margin: 0 auto;
+}
+
+.slider{
+ margin-bottom: 50px;
+}
+
+.slider h1{
+  font-size: medium;
+  font-weight: bold;
+  text-align: center;
+}
+
+.item-page{
+  text-align: center;
 }
